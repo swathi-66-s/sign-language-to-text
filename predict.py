@@ -36,14 +36,17 @@ if count > 20:
     count = 0
 
 prev_letter = letter
-    cv2.putText(frame, letter, (50,50),
+
+cv2.putText(frame, letter, (50,50),
             cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 2)
 
 cv2.putText(frame, "Word: " + word, (50,100),
             cv2.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 2)
+
 cv2.imshow("Frame", frame)
-    if cv2.waitKey(1) & 0xFF == 27:
-        break
+
+if cv2.waitKey(1) & 0xFF == 27:
+    break
 
 cap.release()
 cv2.destroyAllWindows()
