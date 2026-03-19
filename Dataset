@@ -1,0 +1,5 @@
+~800 images per alphabet (A–Z) for training
+~200 images per alphabet for testing
+Total classes: 26 (A–Z)
+Background: plain (to improve accuracy)
+Captured using OpenCV
